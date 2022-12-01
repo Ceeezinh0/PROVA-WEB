@@ -1,0 +1,43 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br"><!-- idioma português (Brasil )-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css"><!-- lincando com o arquivo css -->
+    <script src="JAVA.js"></script><!-- lincando com o arquivo em java script-->
+    <title>COPA DO MUNDO</title>
+</head>
+<body>
+    <header class="o-header">
+        <h1>SORTEIO DA COPA DO MUNDO - CADASTRE-SE</h1> 
+    </header><!-- foi feito um header="cabeça" para ficar mais fácil a estilização desse bloco-->
+    <br>
+    <aside class="o-aside"> 
+        <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/e/e3/2022_FIFA_World_Cup.svg/1200px-2022_FIFA_World_Cup.svg.png" width="300" height="300" alt="gif simbolo da copa">
+    </aside>
+
+    <main class="o-main">
+        <form method="post" action="verifica.php">
+            <br>
+            <pre> <!--Tipo de formatação de formulário-->
+                Insira as informações para efetuar o cadastro do sorteio.
+
+                Nome:               <input type="text" size="50" maxlength="50" name="nome"><br>
+                CPF:                <input type="text" size="50" maxlength="14" name="cpf"><br>
+                Telefone:           <input type="text" size="50" maxlength="20" name="telefone"><br>
+                E-mail:             <input type="text" size="50" maxlength="30" name="email"><br>
+                
+                Porque você merece ganhar o sorteio:
+
+                                    <textarea name="dados_adicionais" cols="50" rows="5"></textarea> <!--Campo de formulário maior-->
+
+                                    <input type="submit" value="Efetuar Cadastro" onclick="enviar();">                 <input type="reset" value="Limpar Dados">
+                
+            </pre>
+        </form>
+    </main>
+</body>
+</html>

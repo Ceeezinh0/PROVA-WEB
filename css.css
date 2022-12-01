@@ -1,0 +1,39 @@
+body{
+    display: grid;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-areas: 
+    "header header header" 
+    "aside main main" 
+    "footer footer footer";
+    background-color: rgb(65, 3, 28);
+   }
+    
+   .o-header{
+    grid-area: header;
+    padding: 1.5rem;
+    text-align-last: center;
+    color: #ffffff;
+    font-size: 30px;
+    animation: blinker 1s step-start infinite;
+   }
+    
+   @keyframes blinker {
+    50% {
+    opacity: 0;
+    }
+   }
+    
+   .o-main{
+    align-content: auto;
+   }
+    
+   .o-aside{
+    align-content: auto;
+   }
+pre{
+    color: #ffffff;
+}
+br{
+    margin right: 300px;
+    margin left: 200px;
+}
